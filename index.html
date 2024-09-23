@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clara e Luca</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="foto.jpg" alt="Clara e Luca" class="foto">
+        <h1 id="texto-animado"></h1>
+        <p id="tempo-juntos"></p>
+        <p class="amor-eterno">Amor eterno ❤️</p>
+            <!-- Botão para iniciar a música -->
+<button id="botao-musica">Tocar música secreta 🎵</button>
+
+<!-- Elemento de áudio sem 'autoplay' -->
+<audio id="musica-de-fundo" src="musica.mp3" loop></audio>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('musica-de-fundo');
+            audio.volume = 0.5; // Ajuste o volume conforme desejado
+        });
+    </script>
+</body>
+</html>
